@@ -1,0 +1,1391 @@
+<!-- COMPLETE CODE OF PAYMENT WALLET PROJECT (FRONT END) BY AFROZ:-
+________________________________________________________________
+
+
+  BELOW IS THE HTML CODE PRESENT FOR 4 PAGES:-
+________________________________________________
+
+
+BELOW IS THE HTML CODE FOR PAYMENT WALLET 1ST PAGE THAT IS HOME PAGE:-
+________________________________________________________________________
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- payment vallet 1st page.css -->
+    <link rel="stylesheet" href="./payment vallet 1st page.css">
+
+    <!-- below is link of google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body id="bd" onload="signupLoad()">
+    <div id="uiBody">
+    <section id="section1">
+        <article id="article1">
+            <header id="header1">
+                <div id="div1"><h1 id="welcomeH1"><marquee behavior="alternate" scrollamount="20">WELCOME TO <span id="jspSpan">JSPIDERS</span> PUNJAGUTTA</marquee></h1><img id="jspLogo" src="./jspider logo image.png"></div>
+                <div>
+                <table id="table1">
+                    <tr id="tr1">
+                        <th class="thClass1" id="thAbout">ABOUT
+                            <select id="aboutSelect" onclick="aboutSelectOninput()" onchange="aboutSelectOnchange()">
+                                <option>JSPIDERS</option>
+                                <option>CEO</option>
+                                <option>FACULTIES</option>
+                            </select>
+                        </th>
+                        <th class="thClass1" id="thServices">SERVICES
+                            <select id="servicesSelect" onclick="servicesSelectOninput()">
+                                <option>JAVA FULLSTACK</option>
+                                <option>PHYTHON FULLSTACK</option>
+                            </select>
+                        </th>
+                        <th class="thClass1" id="thContacts">CONTACTS US</th>
+                    </tr>
+                </table>
+            </div>
+            <input onclick="signupButtonOnclick()" id="signupButton" type="button" value="Signup">
+            <div id="arrowDiv"><marquee direction="right" scrollamount="30"><img id="arrowImg" src="./arrow png.png" alt=""></marquee></div>
+            </header>
+            <main id="main1">
+                <section id="mainSection1">
+                    <center>
+                    <div id="div2">
+                        <h1 id="h12">SOFTWARE TRAINING ORGANISATION</h1>
+                        <p>
+                            JSpiders is the world’s ace software course training organization with an aim to bridge the gap between the demands of the industry and the curriculum of educational institutions. With centers across the Globe, the institute is a platform where young minds are given the opportunity to build successful careers.
+                            <br>
+                            <b>”JSpiders is a place where businesses find talent and dreams take flight."</b>
+                        </p>
+                    </div>
+                </center>
+                </section>
+            </main>
+        </article>
+    </section>
+    <script src="./payment vallet 1st page.js"></script>
+</div>
+</body>
+</html>
+
+
+ BELOW IS THE HTML CODE FOR PAYMENT WALLET 2ND PAGE THAT IS LOGIN PAGE :-
+________________________________________________________________________
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./payment vallet 1st page.css">
+</head>
+<body>
+    <section>
+        <center>
+            <h1 id="loginH1">Login</h1>
+        <div id="loginFormDiv">
+            <form>
+                <br>
+                <input oninput="OnInputLoginVerification()" id="emailId" class="inputClass" type="email" placeholder="Enter Your Email">
+                <br>
+                <br>
+                <input oninput="OnInputLoginVerification()" id="passwordId" class="inputClass" type="password" placeholder="Enter Your Password">
+                <br>
+                <br>
+                <input onclick="OnClickLogin()" id="loginButton" type="button" value="login">
+                <br>
+               <span id="or">Or</span>
+                <br>
+                <a href="./PAYMENT VALLET 3RD PAGE REGISTER PAGE.HTML"><input id="registerButton" type="button" value="register"></a>
+                <br>
+            </form>
+        </div>
+    </center>
+    </section>
+    <script src="./payment vallet 1st page.js"></script>
+</body>
+</html>
+
+
+
+
+ BELOW IS THE HTML CODE FOR PAYMENT WALLET 3RD PAGE THAT IS REGISTER PAGE :-
+_____________________________________________________________________________
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./payment vallet 1st page.css">
+
+    <!-- below is the font awsome css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+
+    <section>
+        <center>
+            <h1 id="registerH1">Register</h1>
+            <span id="emtyFieldErrorSpan"></span>
+        <div id="registerFormDiv">
+            <form action="http://localhost:8080/user/login">
+                <br>
+                <input id="userId" required class="registerInputClass" type="text" placeholder="Enter User_Id" size="10">
+                <br>
+                <br>
+                <input id="userName" required class="registerInputClass" type="text" placeholder="Enter User_Name" size="33">
+                <br>
+                <br>
+                <input oninput="onInputEmail()" id="emailInput" required class="registerInputClass" type="email" placeholder="Enter Email" size="33">
+                <br>
+                <br>
+                <input oninput="onInputphNo()" required id="phNo" class="registerInputClass" type="number" placeholder="Your Phone No" size="10">
+                <br>
+                <br>
+                <span id="passwordStatus"></span>
+                <br>
+                <span><input oninput="onInputPassword()" id="password" required class="registerInputClass" type="password" placeholder="Enter Password" size="25"><i onmousedown="onclickClosedEye1()" onmouseup="onNoClickClosedEye1()" id="closedEye1" class="fa-solid fa-eye-slash"></i></span>
+                <br>
+                <br>
+            <span><input oninput="onInputPassword()" id="confirmPassword" required class="registerInputClass" type="password" placeholder="Confirm Password" size="25"><i onmousedown="onclickClosedEye2()" onmouseup="onNoClickClosedEye2()" id="closedEye2" class="fa-solid fa-eye-slash"></i></span>
+                <br>
+                <br>
+                <input id="submitButton" type="button" value="submit" onclick="submitButtonOnclick()"> <span id="or">Or</span> <a href="./PAYMENT VALLET 2ND PAGE LOGIN PAGE.html"><input id="loginPageButton" type="button" value="loginpage"></a> 
+                <br>
+            </form>
+        </div>
+    </center>
+    </section>
+    <script src="./payment vallet 1st page.js"></script>
+</body>
+</html>
+
+
+
+ BELOW IS THE HTML CODE FOR PAYMENT WALLET 4TH PAGE THAT IS USER PAGE :-
+__________________________________________________________________________
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- payment vallet 1st page.css -->
+    <link rel="stylesheet" href="./payment vallet 1st page.css">
+
+    <!-- below is link of google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+
+<!-- below is the font awsome css link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+<body id="bd" onload="onLoadUserPage()">
+    <section id="section1">
+        <article id="article1">
+            <header id="header1">
+                <div id="div1"><h1 id="welcomeH1"><marquee behavior="alternate" scrollamount="20">WELCOME TO <span id="jspSpan">JSPIDERS</span> PUNJAGUTTA</marquee></h1><img id="jspLogo" src="./jspider logo image.png" style="height: 80px;"></div>
+                <!-- <div>
+                <table id="table1">
+                    <tr id="tr1">
+                        <th class="thClass1" id="thAbout">ABOUT
+                            <select id="aboutSelect" onclick="aboutSelectOninput()" onchange="aboutSelectOnchange()">
+                                <option>JSPIDERS</option>
+                                <option>CEO</option>
+                                <option>FACULTIES</option>
+                            </select>
+                        </th>
+                        <th class="thClass1" id="thServices">SERVICES
+                            <select id="servicesSelect" onclick="servicesSelectOninput()">
+                                <option>JAVA FULLSTACK</option>
+                                <option>PHYTHON FULLSTACK</option>
+                            </select>
+                        </th>
+                        <th class="thClass1" id="thContacts">CONTACTS US</th>
+                    </tr>
+                </table>
+            </div>
+            <input onclick="signupButtonOnclick()" id="signupButton" type="button" value="Signup">
+            <div id="arrowDiv"><marquee direction="right" scrollamount="30"><img id="arrowImg" src="./arrow png.png" alt=""></marquee></div> -->
+          <div id="userNavBarDiv">
+            <table class="userTableNavBar" id="userTableNavBar">
+                <tr class="userTableNavBar">
+                    <th id="creatAccountId" class="userTableNavBar" onclick="onclickcreatAccountId()">CREATE ACCOUNT</th>
+                    <th id="getAccountId" class="userTableNavBar" onclick="onclickGetAccountId()">GET ACCOUNT</th>
+                    <th class="userTableNavBar">UPDATE ACCOUNT</th>
+                    <th class="userTableNavBar">DELETE ACCOUNT</th>
+                    <th class="userTableNavBar">PAYMENT</th>
+                </tr>
+            </table>
+          </div>  
+        </header>
+        <main>
+            <center>
+            <div id="userDiv">
+                <span id="removingSpan1">
+                <i id="avatar" class="fa-solid fa-user-tie"></i>
+                <h1>Student Id: <span class="studentDetails" id="studentId"></span><br> Student Name: <span class="studentDetails" id="studentName"></span> <br>Student Phno:     <span id="studentPhNo" class="studentDetails"></span>
+                </h1>
+            </span>
+            </div>
+        </center>
+        </main>
+            <!-- <main id="main1">
+                <section id="mainSection1">
+                    <center>
+                    <div id="div2">
+                        <h1 id="h12">SOFTWARE TRAINING ORGANISATION</h1>
+                        <p>
+                            JSpiders is the world’s ace software course training organization with an aim to bridge the gap between the demands of the industry and the curriculum of educational institutions. With centers across the Globe, the institute is a platform where young minds are given the opportunity to build successful careers.
+                            <br>
+                            <b>”JSpiders is a place where businesses find talent and dreams take flight."</b>
+                        </p>
+                    </div>
+                </center>
+                </section>
+            </main> -->
+        </article>
+    </section>
+    <script src="./payment vallet 1st page.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  BELOW IS THE CSS CODE PRESENT FOR 4 PAGES:-
+________________________________________________
+
+
+
+ BELOW IS THE CSS CODE FOR PAYMENT WALLET 1ST PAGE THAT IS USER PAGE :-
+________________________________________________________________________
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 2px;
+    background-image: linear-gradient(white,black);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 565px;
+}
+#header1{
+    border: 1px solid black;
+    background-color: orange;
+    position: relative;
+}
+#div1{
+    width: 100%;
+    margin-bottom: 10px;
+}
+#welcomeH1{
+    text-align: left;
+    font-family: 'Lilita One', cursive;
+    color: white;
+    word-spacing: 10px;
+    font-size:25px;
+    width: 91.5%;
+    padding-left: 3px;
+    position: relative;
+    top: 7px;
+}
+#welcomeH1:hover #jspSpan{
+    color:lime;
+}
+#jspLogo{
+    width: 100px;
+    height: 60px;
+    float: right;
+    position: relative;
+    top: -20px;
+    left: -5px;
+}
+#table1{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.thClass1{
+    border: 2px solid black;
+    padding: 0px 20px;
+    font-size: large;
+    font-family: 'Cherry Bomb One', cursive;
+    background-color: white;
+    font-weight:lighter;
+}
+#signupButton{
+    width: 100px;
+    height: 34px;
+    position: absolute;
+    left: 1070px;
+    bottom: 1px;
+}
+#signupButton:hover{
+    width: 100px;
+    height: 34px;
+    position: absolute;
+    left: 1070px;
+    bottom: 1px;
+    font-size: larger;
+}
+#aboutSelect{
+    font-size: larger;
+    width: 18px;
+    position: relative;
+    left: -5px;
+    background-color: transparent;
+    border: none;
+}
+#servicesSelect{
+    font-size: larger;
+    width: 18px;
+    position: relative;
+    left: -5px;
+    background-color: transparent;
+    border: none;
+}
+#div2{
+    width: 40%;
+    border: 1px solid white;
+    box-shadow: 5px 5px 8px black;
+    margin-top: 100px;
+    line-height: 45px;
+    background-image: linear-gradient(black,orange);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px;
+    color: white;
+}
+#h12{
+    font-size: larger;
+    color: red;
+}
+b{
+    color: greenyellow;
+}
+#facultyImg{
+    width:100px;
+    height:100px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+#mainSpan1{
+    float: left;
+    margin: 30px;
+    text-align: center;
+}
+
+
+#arrowImg{
+    height: 30px;
+    width: 70px;
+}
+#arrowDiv{
+    position: absolute;
+    left: 451px;
+    width: 48.5%;
+    bottom: -6px;
+}
+#h3{
+    color: white;
+}
+#p{
+    color: lime;
+}
+
+
+
+
+
+ BELOW IS THE CSS CODE FOR PAYMENT WALLET 2ND PAGE THAT IS LOGIN PAGE :-
+________________________________________________________________________
+
+#loginFormDiv{
+    border: 1px solid white;
+    box-shadow: 2px 2px 3px black;
+    border-radius: 8px;
+    width: 33%;
+    height: 215px;
+    position: relative;
+    top: 150px;
+}
+#loginH1{
+    position: relative;
+    top: 148px;
+    font-weight: 100;
+    /* font-family:; */
+    color: white;
+    font-size: 40px;
+    text-shadow: 2px 2px 3px black;
+}
+input{
+    text-align: center;
+    font-size: larger;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px black;
+}
+#emailId{
+    width: 390px;
+    height: 30px;
+}
+#passwordId{
+    width: 280px;
+    height: 30px;
+}
+#loginButton,#registerButton{
+    width: 30%;
+    height: 33px;
+}
+
+
+
+ BELOW IS THE CSS CODE FOR PAYMENT WALLET 3RD PAGE THAT IS REGISTER PAGE :-
+________________________________________________________________________
+
+#registerFormDiv{
+    border: 1px solid white;
+    box-shadow: 2px 2px 3px black;
+    border-radius: 8px;
+    width: 30%;
+    height: 390px;
+    position: relative;
+    top: 80px;
+}
+#registerH1{
+    position: relative;
+    top: 78px;
+    font-weight: 100;
+    /* font-family:; */
+    color: white;
+    font-size: 40px;
+    text-shadow: 2px 2px 3px black;
+}
+#submitButton{
+    width: 100px;
+    height: 40px;
+}
+#loginPageButton{
+    width: 100px;
+    height: 40px;
+}
+.registerInputClass{
+    height:30px;
+}
+#or{
+    color: white;
+}
+#emtyFieldErrorSpan{
+    color: red;
+    font-size: larger;
+}
+
+#closedEye1,#closedEye2{
+    position: relative;
+    right: 25px;
+    color:grey;
+}
+#passwordStatus
+{
+    color: white;
+}
+
+
+ BELOW IS THE CSS CODE FOR PAYMENT WALLET 4TH PAGE THAT IS USER PAGE :-
+________________________________________________________________________
+
+
+#userTableNavBar{
+    width: 91.5%;
+}
+.userTableNavBar{
+    border: 1px solid black;
+    background-color: white;
+    border-collapse: collapse;
+    font-size:25px;
+    font-family: 'Cherry Bomb One', cursive;
+    font-weight:300;
+    padding: 10px;
+    color: black;
+}
+.userTableNavBar:hover{
+    border: 1px solid black;
+    background-color: white;
+    border-collapse: collapse;
+    font-size:26px;
+    font-family: 'Cherry Bomb One', cursive;
+    font-weight:300;
+    padding: 10px;
+    color: blue;
+}
+.userTableNavBar:active{
+    border: 1px solid black;
+    background-color: white;
+    border-collapse: collapse;
+    font-size:25px;
+    font-family: 'Cherry Bomb One', cursive;
+    font-weight:300;
+    padding: 10px;
+    color: red;
+}
+#userNavBarDiv{
+margin-bottom: 2px;
+}
+#userDiv{
+    border: 0px solid black;
+    width: 52%;
+    height: 280px;
+    position: relative;
+    top: 48px;
+    font-size:xx-large;
+    font-family: 'Lilita One', cursive;
+    font-weight: 100;
+    letter-spacing: 2px;
+    word-spacing: 8px;
+    color:orange;
+    text-shadow: -1px -1px 2px white,-2px -2px 4px black,1px 1px 2px red,2px 2px 4px red,-1px -1px 5px blue;
+    border-radius: 100%;
+    box-shadow: 3px 3px 5px white,-1px -1px 2px orangered,3px 3px 5px blue;
+    padding:  10px 0px 70px 0px;
+    background-color:rgb(255, 225, 114);    
+    padding-bottom: 80px;
+
+}
+#userDiv:hover{
+    border: 0px solid black;
+    width: 52%;
+    position: relative;
+    top: 48px;
+    font-size:xx-large;
+    font-family: 'Lilita One', cursive;
+    font-weight: 100;
+    letter-spacing: 2px;
+    word-spacing: 8px;
+    color:orange;
+    text-shadow: -1px -1px 2px white,-2px -2px 4px black,1px 1px 2px red,2px 2px 4px red,-1px -1px 5px blue;
+    border-radius: 100%;
+    box-shadow: 3px 3px 5px white,-1px -1px 2px blue,3px 3px 5px orangered;
+    padding:  10px 0px 70px 0px;
+    background-color:rgb(255, 225, 114);
+    padding-bottom: 80px;
+
+}
+.studentDetails{
+    color: white;
+    text-shadow: 1px 1px 2px white,2px 2px 4px black,1px 1px 2px red,2px 2px 4px red,-1px -1px 5px blue;
+    font-weight: 100;
+}
+
+#avatar{
+    font-size: 100px;
+    border: 1px solid black;
+    padding: 23px;
+    border-radius: 100%;
+    background-color: aliceblue;
+    text-shadow: 1px 1px 0px black,-1px -1px 0px black,1px -1px 0px black,-1px 1px 0px black;
+    box-shadow: 2px 2px 5px white,-1px -1px 5px blue,3px 3px 5px orangered;
+    margin-bottom: 5px;
+} */
+#avatar:hover{
+    font-size: 100px;
+    border: 1px solid black;
+    padding: 23px;
+    border-radius: 100%;
+    background-color: aliceblue;
+    text-shadow: 1px 1px 0px black,-1px -1px 0px black,1px -1px 0px black,-1px 1px 0px black;
+    box-shadow: 2px 2px 5px white,-1px -1px 5px orangered,3px 3px 5px blue;
+    margin-bottom: 5px;
+}
+.creatAccountInputClasses{
+    width: 50%;
+    height: 30px;
+    margin:15PX;
+    position: relative;
+    top: 23PX;
+    font-size: 25px;
+
+}
+#proceedButton{
+    margin-top: 30PX;
+    font-size: 25PX;
+    width:22%;
+    height: 40px;
+}
+#proceedButton:hover{
+    margin-top: 30PX;
+    font-size: 28PX;
+    width:22%;
+    height: 40px;
+    color: red;
+}
+#minimumSelect{
+    border:2px inset rgb(125, 124, 124);
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px black;
+    font-size:20px;
+    font-weight: 500;
+    text-align: center;
+    color: gray;
+    width:45%;
+    height: 33px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+    -webkit-appearance: none;
+}
+
+#closedEye3,#closedEye4{
+    text-shadow: none;
+    color: grey;
+    position: inherit;
+    right: 50px;
+    top: 22px;
+    font-size: 22px;
+}
+.userPass{
+    position: relative;
+    left: 15px;
+}
+.getUserDetailsClass{
+    color: white;
+}
+#removingSpan3{
+    font-weight:lighter;
+}
+
+#noGetAccountSpan{
+    position: inherit;
+    top: 128px;
+    color: white;
+    text-shadow: 2PX 2PX 3px black;
+    font-size: larger;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  BELOW IS THE JS CODE PRESENT FOR 4 PAGES:-
+________________________________________________
+
+
+ BELOW IS THE JS CODE FOR PAYMENT WALLET 1ST PAGE THAT IS HOME PAGE :-
+________________________________________________________________________
+
+
+function aboutSelectOninput()
+{
+    document.getElementById('aboutSelect').style.border="none"
+    document.getElementById('aboutSelect').style.outline="none"
+}
+function servicesSelectOninput()
+{
+    document.getElementById('servicesSelect').style.border="none"
+    document.getElementById('servicesSelect').style.outline="none"
+}
+function aboutSelectOnchange()
+{
+    let aboutSelectValue=document.getElementById('aboutSelect').value
+    if(aboutSelectValue=='JSPIDERS')
+    {
+        window.open("https://jspiders.com/")
+    }
+    else if(aboutSelectValue=='CEO')
+    {
+        window.open("https://yourstory.com/people/girish-shivanna?origin=awards#:~:text=Girish%20Shivanna%20Mr.%20Girish%20is%20a%20seasoned%20Executive,Test%20Yantra%20Software%20Solutions%2C%20Qspiders%2C%20Jspiders%20%26%20Flagroot.")
+    }
+    else if(aboutSelectValue=='FACULTIES')
+    {
+        document.getElementById('div2').remove()
+        let facultiesApi=window.fetch("payment vallet 1st page.json")
+console.log(facultiesApi)
+facultiesApi.then((element)=>{element.json().then((facultyObject)=>{console.log(facultyObject) 
+facultyObject.map((obj)=>{console.log(obj)
+document.getElementById('mainSection1').innerHTML+=`<span id="mainSpan1">
+<img id="facultyImg" src="${obj.facultyImage}">
+<h3 id="h3">${obj.facultyName}</h3>
+<p id="p">${obj.expertIn}</p>
+</span>`})
+})})
+    }
+}
+function signupLoad()
+{
+    setInterval(()=>{document.getElementById('signupButton').style.color="black";
+    document.getElementById('signupButton').style.fontSize=""},500)
+    setInterval (()=>{document.getElementById('signupButton').style.color="red";
+    document.getElementById('signupButton').style.fontSize="larger"},1000)
+    setInterval (()=>{document.getElementById('thAbout').style.color="lime"},1000)
+    setInterval (()=>{document.getElementById('thAbout').style.color="black"},2000)
+    setInterval (()=>{document.getElementById('thAbout').style.color="black"},3000)
+    setInterval (()=>{document.getElementById('thServices').style.color="black"},1000)
+    setInterval (()=>{document.getElementById('thServices').style.color="lime"},2000)
+    setInterval (()=>{document.getElementById('thServices').style.color="black"},3000)
+    setInterval (()=>{document.getElementById('thContacts').style.color="black"},1000)
+    setInterval (()=>{document.getElementById('thContacts').style.color="black"},2000)
+    setInterval (()=>{document.getElementById('thContacts').style.color="lime"},3000)
+    setInterval (()=>{document.getElementById('jspSpan').style.color="white"},1000)
+    setInterval (()=>{document.getElementById('jspSpan').style.color="black"},2000)
+    setInterval (()=>{document.getElementById('div2').style.backgroundImage="linear-gradient(orange,black)"},1000)
+    setInterval (()=>{document.getElementById('div2').style.backgroundImage="linear-gradient(black,orange)"},2000)
+    setInterval (()=>{document.getElementById('bd').style.backgroundImage="linear-gradient(white,black)"},5000)
+    setInterval (()=>{document.getElementById('bd').style.backgroundImage="linear-gradient(black,white)"},10000)
+
+}
+ 
+function signupButtonOnclick()
+{
+    window.open("http://127.0.0.1:5500/PAYMENT%20VALLET%202ND%20PAGE%20LOGIN%20PAGE.html")
+}
+
+
+ BELOW IS THE JS CODE FOR PAYMENT WALLET 2ND PAGE THAT IS LOGIN PAGE :-
+________________________________________________________________________
+
+
+function OnClickLogin()
+{
+        var emailId= document.getElementById('emailId')
+        var passwordId= document.getElementById('passwordId')
+        var emailIdValue= emailId.value
+        var passwordIdValue= passwordId.value
+        var localStorageUserMailAdress=localStorage.getItem('userMailAdress')
+        var localStorageUserPassword=localStorage.getItem('userPassword')
+        if(emailIdValue===localStorageUserMailAdress && passwordIdValue===localStorageUserPassword)
+        {
+                              
+            window.open("http://127.0.0.1:5500/PAYMENT%20VALLET%204TH%20PAGE%20USER%20PAGE.HTML")
+        }
+        else if(emailIdValue!==localStorageUserMailAdress || passwordIdValue!==localStorageUserPassword)
+        {
+
+        }
+}
+
+function OnInputLoginVerification()
+{
+        var emailId= document.getElementById('emailId')
+        var passwordId= document.getElementById('passwordId')
+        var emailIdValue= emailId.value
+        var passwordIdValue= passwordId.value
+        var localStorageUserMailAdress=localStorage.getItem('userMailAdress')
+        var localStorageUserPassword=localStorage.getItem('userPassword')
+        // console.log(localStorageUserMailAdress)
+        // console.log(localStorageUserPassword)
+        if(emailIdValue===localStorageUserMailAdress && passwordIdValue===localStorageUserPassword)
+        {
+            setTimeout(()=>{emailId.style.border="green 2px solid";
+                            passwordId.style.border="green 2px solid"                               
+        },1000)
+            setTimeout(()=>{
+                emailId.style.border="";
+                passwordId.style.border=""},2000)
+            
+        }
+        else if(emailIdValue!==localStorageUserMailAdress || passwordIdValue!==localStorageUserPassword)
+        {
+            emailId.style.border=""
+            passwordId.style.border=""
+        }
+}
+
+
+ BELOW IS THE JS CODE FOR PAYMENT WALLET 3RD PAGE THAT IS SIGNUP PAGE :-
+________________________________________________________________________
+
+
+
+function submitButtonOnclick()
+{   
+    let registerInputClassInputs=document.getElementsByClassName('registerInputClass')
+    let registerInputClassInputspureArray=Array.from(registerInputClassInputs)
+    var everyValue=registerInputClassInputspureArray.every((element)=>{return element.value==''})
+        var lengthOfNulls=registerInputClassInputspureArray.map((element)=>{if((element.value=='')){
+           var nullElements=element}
+        return nullElements})
+        var lengthOfNulls=lengthOfNulls.filter((element)=>{return element!==undefined})
+        if(everyValue===true)
+        {
+            alert("The given fields are mandatory")
+            registerInputClassInputspureArray.map((element)=>{
+                element.style.border="red solid 2px"})
+            document.getElementById('emtyFieldErrorSpan').innerHTML='The Given Fields Are Mandatory You Should Not Leave The Red Fields Empty' 
+        }
+        else if(everyValue===false){
+            registerInputClassInputspureArray.map((element)=>{
+                element.style.border=""})
+            document.getElementById('emtyFieldErrorSpan').innerHTML='' 
+            if(lengthOfNulls.length==1)
+        {
+            alert("The given field is mandatory")
+            registerInputClassInputspureArray.map((element)=>{
+                if(element.value==''){
+                element.style.border="red solid 2px"}})
+            document.getElementById('emtyFieldErrorSpan').innerHTML='The Given Field Is Mandatory You Should Not Leave The Red Field Empty' 
+        }
+        else if(lengthOfNulls.length>1)
+        {
+            alert("The given fields are mandatory")
+            registerInputClassInputspureArray.map((element)=>{
+                if(element.value==''){
+                element.style.border="red solid 2px"}})
+            document.getElementById('emtyFieldErrorSpan').innerHTML='The Given Fields Are Mandatory You Should Not Leave The Red Fields Empty' 
+        }
+    }
+    var everyValue=registerInputClassInputspureArray.every((element)=>{return element.value!==''})
+    if(everyValue==true){
+        let emailInput=document.getElementById('emailInput')
+        let emailInputValue=emailInput.value
+        if(emailInputValue!==emailInputValue.slice(0,-10)+"@gmail.com"  || emailInputValue.slice(0,-10)=='')
+        {
+            alert("please enter your mailadress followed by the keyword '@gmail.com'")
+                emailInput.style.border="red 2px solid"
+        }
+        else if(emailInputValue==emailInputValue.slice(0,-10)+"@gmail.com"  && emailInputValue.slice(0,-10)!=='')
+        {
+                emailInput.style.border=""
+                setTimeout(()=>{emailInput.style.border="green 2px solid"},500)
+                setTimeout(()=>{emailInput.style.border=""},500)
+        }
+        let phNo=document.getElementById('phNo')
+    phNoValue=phNo.value
+    if(phNoValue.length!==10)
+    {
+        alert(`YOUR PHNO SHOULD BE OF EXACTLY 10 DIGITS NUMERIC INTEGER BUT YOU HAVE ONLY ENTERED ${phNoValue.length} DIGITS ONLY`)
+        phNo.style.border="2px solid red"
+    }
+    else if(phNoValue.length==10)
+    {
+        phNo.style.border=""
+    }
+        let password=document.getElementById('password')
+        let confirmPassword=document.getElementById('confirmPassword')
+        var passwordValue=password.value
+        var confirmPasswordValue=confirmPassword.value
+        if(passwordValue!==confirmPasswordValue)
+        {
+            alert("your confirm password is not matching with password")
+            password.style.border="green 2px solid"
+            confirmPassword.style.border="red 2px solid"
+        }
+        else if(passwordValue==confirmPasswordValue)
+        {
+            password.style.border="green 2px solid"
+            confirmPassword.style.border="green 2px solid"
+            setTimeout(()=>{password.style.border=""},500)
+            setTimeout(()=>{confirmPassword.style.border=""},500)
+        }
+    }
+    var noRedBorder=registerInputClassInputspureArray.some((element)=>{return element.style.border=="2px solid red"})
+    if(noRedBorder==false)
+    {
+        window.open("http://127.0.0.1:5500/PAYMENT%20VALLET%202ND%20PAGE%20LOGIN%20PAGE.html")
+        var userEmailAdress=document.getElementById('emailInput').value
+        var userPasswordValue=document.getElementById('password').value
+        var userIdValue=document.getElementById('userId').value
+        var userNameValue=document.getElementById('userName').value
+        var userPhoneNoValue=document.getElementById('phNo').value
+        localStorage.setItem('userMailAdress',userEmailAdress)
+        localStorage.setItem('userPassword',userPasswordValue)
+        localStorage.setItem('userId',userIdValue)
+        localStorage.setItem('userName',userNameValue)
+        localStorage.setItem('userPhNo',userPhoneNoValue)
+    }
+    else{
+    }
+
+}
+function onInputPassword()
+{
+    let password=document.getElementById('password')
+        let confirmPassword=document.getElementById('confirmPassword')
+        var passwordValue=password.value
+        var confirmPasswordValue=confirmPassword.value
+        if(passwordValue=='' || confirmPasswordValue=='')
+        {
+            password.style.border=''
+            confirmPassword.style.border=''
+        }
+        else if(passwordValue!=='' && confirmPasswordValue!=='' && passwordValue==confirmPasswordValue)
+        {
+            password.style.border="2px solid green"
+            confirmPassword.style.border="2px solid green"
+        }
+        else if(passwordValue!==''&& confirmPasswordValue!=='' && passwordValue!==confirmPasswordValue)
+        {
+            password.style.border="2px solid green"
+            confirmPassword.style.border="2px solid red"
+        }   
+    if(passwordValue.length>=1 && passwordValue.length<=5)
+    {
+        var passwordStatus= document.getElementById('passwordStatus')
+        passwordStatus.innerHTML=`weak password`
+    }
+    else if(passwordValue.length>=6 && passwordValue.length<=10)
+    {
+        var passwordStatus= document.getElementById('passwordStatus')
+        passwordStatus.innerHTML=`strong password`
+    }
+    else if(passwordValue.length>=11 && passwordValue.length<=15)
+    {
+        var passwordStatus= document.getElementById('passwordStatus')
+        passwordStatus.innerHTML=`Excellent password`
+    }
+    else{
+        var passwordStatus= document.getElementById('passwordStatus')
+        passwordStatus.innerHTML=``
+    }
+    if(passwordValue.length>15)
+    {
+        password.value=password.value.slice(0,15)
+    }
+    else if(passwordValue.length<=15)
+    {
+        password.value=password.value
+    }
+    if(confirmPasswordValue.length>15)
+    {
+        confirmPassword.value=confirmPassword.value.slice(0,15)
+    }
+    else if(confirmPasswordValue.length<=15)
+    {
+        confirmPassword.value=confirmPassword.value
+    }
+}
+
+
+function onInputEmail()
+{
+    let emailInput=document.getElementById('emailInput')
+    let emailInputValue=emailInput.value
+    if(emailInputValue==emailInputValue.slice(0,-10)+"@gmail.com"  && emailInputValue.slice(0,-10)!=='')
+    {
+        setTimeout(()=>{emailInput.style.border="orange 2px solid"},2000)
+        setTimeout(()=>{emailInput.style.border=""},2500) 
+    }
+    else if(emailInputValue==emailInputValue.slice(0,-10)+"@gmail.com" && emailInputValue.slice(0,-10)=='')
+    {
+        emailInput.style.border=""
+    }
+}
+
+
+function onInputphNo()
+{
+    let phNo=document.getElementById('phNo')
+    var phNoValue=phNo.value
+    if(phNoValue.length!==10)
+    {
+        setTimeout(()=>{phNo.style.border="red 2px solid"},2000)
+    }
+    else if(phNoValue.length==10)
+    {
+        phNo.style.border=""
+        setTimeout(()=>{phNo.style.border="orange 2px solid"},2000)
+        setTimeout(()=>{phNo.style.border=""},2500)
+    }
+
+if(phNoValue.length>10)
+    {
+        phNo.value=phNo.value.slice(0,10)
+    }
+    else if(phNoValue.length<=10)
+    {
+        phNo.value=phNo.value
+    }
+}
+
+
+function onclickClosedEye1()
+{
+    let closedEye1=document.getElementById('closedEye1')
+    let password=document.getElementById('password')
+    // console.log(closedEye)
+    password.removeAttribute('type')
+    password.setAttribute('type','text')
+    closedEye1.removeAttribute('class')
+    closedEye1.setAttribute('class','fa-solid fa-eye')
+}
+
+function onNoClickClosedEye1()
+{
+    let closedEye1=document.getElementById('closedEye1')
+    let password=document.getElementById('password')
+    // console.log(closedEye)
+    password.removeAttribute('type')
+    password.setAttribute('type','password')
+    closedEye1.removeAttribute('class')
+    closedEye1.setAttribute('class','fa-solid fa-eye-slash')
+}
+
+function onclickClosedEye2()
+{
+    let closedEye2=document.getElementById('closedEye2')
+    let confirmPassword=document.getElementById('confirmPassword')
+    // console.log(closedEye)
+    confirmPassword.removeAttribute('type')
+    confirmPassword.setAttribute('type','text')
+    closedEye2.removeAttribute('class')
+    closedEye2.setAttribute('class','fa-solid fa-eye')
+}
+function onNoClickClosedEye2()
+{
+    let closedEye2=document.getElementById('closedEye2')
+    let confirmPassword=document.getElementById('confirmPassword')
+    // console.log(closedEye)
+    confirmPassword.removeAttribute('type')
+    confirmPassword.setAttribute('type','password')
+    closedEye2.removeAttribute('class')
+    closedEye2.setAttribute('class','fa-solid fa-eye-slash')
+}
+
+
+
+
+ BELOW IS THE JS CODE FOR PAYMENT WALLET 4TH PAGE THAT IS USER PAGE :-
+________________________________________________________________________
+
+
+
+function onLoadUserPage()
+{
+    let phnono=localStorage.getItem('userPhNo')
+    document.getElementById('studentId').innerHTML=localStorage.getItem('userId')
+    document.getElementById('studentName').innerHTML=localStorage.getItem('userName')
+    document.getElementById('studentPhNo').innerHTML=phnono.slice(0,2)+'*******'+phnono.slice(-2)
+    setInterval (()=>{document.getElementById('bd').style.backgroundImage="linear-gradient(white,black)"},5000)
+    setInterval (()=>{document.getElementById('bd').style.backgroundImage="linear-gradient(black,white)"},10000)
+    setInterval (()=>{document.getElementById('jspSpan').style.color="white"},1000)
+    setInterval (()=>{document.getElementById('jspSpan').style.color="black"},2000)
+}
+function onclickcreatAccountId()
+{
+        document.getElementById('userDiv').innerHTML=`<span id="removingSpan2">
+    <form>
+        <select onchange="minimumSelectOnchange()" onclick="minimumSelectOninput()" oninput="minimumSelectOninput()" id="minimumSelect" class="creatAccountInputClasses">
+            <option selected hidden>MINIMUM TRANSACTION</option>
+            <option>0</option>
+            <option>100</option>
+            <option>1000</option>
+            <option>10000</option>
+        </select>
+        <span class="userPass"><input id="userPagePassword" type="password" placeholder="Password" class="creatAccountInputClasses"><i onmousedown="onclickClosedEye3()" onmouseup="onNoClickClosedEye3()" id="closedEye3" class="fa-solid fa-eye-slash"></i></span>
+        <br>
+        <span class="userPass"><input id="userPageConfirmPassword" type="password" placeholder="Confirm Password" class="creatAccountInputClasses"><i onmousedown="onclickClosedEye4()" onmouseup="onNoClickClosedEye4()" id="closedEye4" class="fa-solid fa-eye-slash"></i></span>
+        <br>
+        <input id="amount" type="number" placeholder="Enter Amount" class="creatAccountInputClasses">
+        <br>
+        <input onclick="onclickProceedButton()" id="proceedButton" type="button" value="Proceed">
+    </form>
+</span>`
+
+}
+function minimumSelectOninput()
+{
+    document.getElementById('minimumSelect').style.border="2px inset rgb(125, 124, 124)"
+    document.getElementById('minimumSelect').style.outline="none"
+    document.getElementById('minimumSelect').style.borderRadius="5px"
+    document.getElementById('minimumSelect').style.boxShadow="2px 2px 3px black"
+}
+function minimumSelectOnchange()
+{
+    document.getElementById('minimumSelect').style.color="black"
+}
+
+function onclickProceedButton()
+{
+    var creatAccountInputClasses=document.getElementsByClassName('creatAccountInputClasses')
+    let pureFormOfCreatAccountInputClasses=Array.from(creatAccountInputClasses)
+    let everyPureFormOfCreatAccountInputClasses =pureFormOfCreatAccountInputClasses.some((element)=>{ return element.value=='' || element.value=='MINIMUM TRANSACTION'})
+    if(everyPureFormOfCreatAccountInputClasses==true)
+    {
+        alert('it is mandatory to fill the given field before you proceed')
+        pureFormOfCreatAccountInputClasses.map((element)=>{
+            if(element.value==''){element.style.border="2px solid red"}
+            else{element.style.border=""}
+    })
+    pureFormOfCreatAccountInputClasses[0].style.boxShadow="none"
+    pureFormOfCreatAccountInputClasses[0].style.boxShadow="2PX 2PX 3PX BLACK"
+    pureFormOfCreatAccountInputClasses[0].style.border="2px solid red"
+    }
+    
+    else
+    {
+        pureFormOfCreatAccountInputClasses[0].style.border=""
+        var userPagePasswordValue=document.getElementById('userPagePassword').value
+    var userPageConfirmPasswordValue=document.getElementById('userPageConfirmPassword').value
+    if(userPagePasswordValue!==userPageConfirmPasswordValue)
+    {
+        alert("Please cross check your confirm password, as it is not matching with the password that you have entered")
+    }
+    else if(userPagePasswordValue===userPageConfirmPasswordValue)
+    {
+        
+        pureFormOfCreatAccountInputClasses.map((element)=>{
+           element.style.border=""})
+        var verificaion=pureFormOfCreatAccountInputClasses.some((element)=>{return element.value==''})
+        
+        if(pureFormOfCreatAccountInputClasses[0]!=="MINIMUM TRANSACTION" && verificaion==false){
+           var amountValue=document.getElementById('amount').value
+            localStorage.setItem('amount',amountValue)
+            var amountValue=document.getElementById('amount').value
+    var minimumSelectValue=document.getElementById('minimumSelect').value
+    if(minimumSelectValue=='0')
+    {if(amountValue<0){
+        alert('amount should be atleast 0')
+    }
+    else if(amountValue>=0){
+        document.getElementById('userDiv').innerHTML=`<span id="removingSpan1">
+        <i id="avatar" class="fa-solid fa-user-tie"></i>
+        <h1>Student Id: <span class="studentDetails" id="studentId"></span><br> Student Name: <span class="studentDetails" id="studentName"></span> <br>Student Phno:     <span id="studentPhNo" class="studentDetails"></span>
+        </h1>
+    </span>`
+    let phnono=localStorage.getItem('userPhNo')
+    document.getElementById('studentId').innerHTML=localStorage.getItem('userId')
+    document.getElementById('studentName').innerHTML=localStorage.getItem('userName')
+    document.getElementById('studentPhNo').innerHTML=phnono.slice(0,2)+'*******'+phnono.slice(-2)
+    }
+
+}
+else if(minimumSelectValue=='100')
+    {if(amountValue<100){
+        alert('amount should be atleast 100')
+    }
+    else if(amountValue>=100){
+        document.getElementById('userDiv').innerHTML=`<span id="removingSpan1">
+    <i id="avatar" class="fa-solid fa-user-tie"></i>
+    <h1>Student Id: <span class="studentDetails" id="studentId"></span><br> Student Name: <span class="studentDetails" id="studentName"></span> <br>Student Phno:     <span id="studentPhNo" class="studentDetails"></span>
+    </h1>
+</span>`
+let phnono=localStorage.getItem('userPhNo')
+    document.getElementById('studentId').innerHTML=localStorage.getItem('userId')
+    document.getElementById('studentName').innerHTML=localStorage.getItem('userName')
+    document.getElementById('studentPhNo').innerHTML=phnono.slice(0,2)+'*******'+phnono.slice(-2)
+    }
+
+}
+else if(minimumSelectValue=='1000')
+    {if(amountValue<1000){
+        alert('amount should be atleast 1000')
+    }
+    else if(amountValue>=1000){
+        document.getElementById('userDiv').innerHTML=`<span id="removingSpan1">
+        <i id="avatar" class="fa-solid fa-user-tie"></i>
+        <h1>Student Id: <span class="studentDetails" id="studentId"></span><br> Student Name: <span class="studentDetails" id="studentName"></span> <br>Student Phno:     <span id="studentPhNo" class="studentDetails"></span>
+        </h1>
+    </span>`
+    let phnono=localStorage.getItem('userPhNo')
+    document.getElementById('studentId').innerHTML=localStorage.getItem('userId')
+    document.getElementById('studentName').innerHTML=localStorage.getItem('userName')
+    document.getElementById('studentPhNo').innerHTML=phnono.slice(0,2)+'*******'+phnono.slice(-2)
+    }
+}
+
+}
+else if(minimumSelectValue=='10000')
+    {if(amountValue<10000){
+        alert('amount should be atleast 10000')
+    }
+    else if(amountValue>=10000){
+        document.getElementById('userDiv').innerHTML=`<span id="removingSpan1">
+        <i id="avatar" class="fa-solid fa-user-tie"></i>
+        <h1>Student Id: <span class="studentDetails" id="studentId"></span><br> Student Name: <span class="studentDetails" id="studentName"></span> <br>Student Phno:     <span id="studentPhNo" class="studentDetails"></span>
+        </h1>
+    </span>`
+    let phnono=localStorage.getItem('userPhNo')
+    document.getElementById('studentId').innerHTML=localStorage.getItem('userId')
+    document.getElementById('studentName').innerHTML=localStorage.getItem('userName')
+    document.getElementById('studentPhNo').innerHTML=phnono.slice(0,2)+'*******'+phnono.slice(-2)
+    }
+}
+
+}
+ 
+    
+
+    }
+}
+function onclickClosedEye3()
+{
+    let closedEye1=document.getElementById('closedEye3')
+    let password=document.getElementById('userPagePassword')
+    // console.log(closedEye)
+    password.removeAttribute('type')
+    password.setAttribute('type','text')
+    closedEye1.removeAttribute('class')
+    closedEye1.setAttribute('class','fa-solid fa-eye')
+}
+
+function onNoClickClosedEye3()
+{
+    let closedEye1=document.getElementById('closedEye3')
+    let password=document.getElementById('userPagePassword')
+    // console.log(closedEye)
+    password.removeAttribute('type')
+    password.setAttribute('type','password')
+    closedEye1.removeAttribute('class')
+    closedEye1.setAttribute('class','fa-solid fa-eye-slash')
+}
+
+function onclickClosedEye4()
+{
+    let closedEye2=document.getElementById('closedEye4')
+    let confirmPassword=document.getElementById('userPageConfirmPassword')
+    // console.log(closedEye)
+    confirmPassword.removeAttribute('type')
+    confirmPassword.setAttribute('type','text')
+    closedEye2.removeAttribute('class')
+    closedEye2.setAttribute('class','fa-solid fa-eye')
+}
+function onNoClickClosedEye4()
+{
+    let closedEye2=document.getElementById('closedEye4')
+    let confirmPassword=document.getElementById('userPageConfirmPassword')
+    // console.log(closedEye)
+    confirmPassword.removeAttribute('type')
+    confirmPassword.setAttribute('type','password')
+    closedEye2.removeAttribute('class')
+    closedEye2.setAttribute('class','fa-solid fa-eye-slash')
+}
+
+
+
+
+function onclickGetAccountId()
+{
+    let localAmount=localStorage.getItem('amount')
+    if(localAmount!==null){
+    document.getElementById('userDiv').innerHTML=`<span id="removingSpan3">
+    <br>
+        <h1>User Details</h1>
+        <br>
+        <span>ID:<span class="getUserDetailsClass"> ${localStorage.getItem('userId')}</span></span>
+        <br>
+        <span>Name:<span class="getUserDetailsClass"> ${localStorage.getItem('userName')}</span></span>
+        <br>
+        <span>Phone No:<span class="getUserDetailsClass"> ${localStorage.getItem('userPhNo')}</span></span>
+        <br>
+        <span>Account No:<span class="getUserDetailsClass"> SBI**********009</span></span>
+        <br>
+        <span>Amount: <span class="getUserDetailsClass">${localStorage.getItem('amount')}</span></span>
+</span>`
+}
+else{
+    document.getElementById('userDiv').innerHTML=`<span id="noGetAccountSpan">Please Create an Account Before getting an Account<span>`
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BELOW IS THE JASON CODE FOR PAYMENT WALLET 1ST PAGE THAT IS HOME PAGE :-
+________________________________________________________________________
+
+
+
+[
+    {
+        "facultyName":"Vivek",
+        "expertIn":"CoreJava expert",
+        "facultyImage":"VIVEK SIR.jpeg"
+        },
+        {
+            "facultyName":"Afroz",
+            "expertIn":"Database expert",
+            "facultyImage":"AFROZ SIR.jpg"
+            },
+            {
+            "facultyName":"Prashant",
+            "expertIn":"Backend expert",
+            "facultyImage":"PRASHANT SIR.jpeg"
+            },
+            {
+                "facultyName":"Ningaraju",
+                "expertIn":"Frontend expert",
+                "facultyImage":"NINGARAJU SIR.jpeg"
+                },
+                {
+                    "facultyName":"Pavan",
+                    "expertIn":"Programming expert",
+                    "facultyImage":"PAVAN SIR.jpeg"
+                    },
+                    {
+               "facultyName":"Koushik",
+               "expertIn":"CoreJava expert",
+                "facultyImage":"KOUSHIK SIR.jpeg"
+                },
+                {
+                    "facultyName":"Gowtham",
+                    "expertIn":"Database expert",
+                     "facultyImage":"GOWTHAM SIR.jpeg"
+                     }
+                    ]
+ -->

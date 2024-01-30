@@ -1,0 +1,37 @@
+[
+    {
+        "facultyName":"Vivek",
+        "expertIn":"CoreJava expert",
+        "facultyImage":"VIVEK SIR.jpeg"
+        },
+        {
+            "facultyName":"Afroz",
+            "expertIn":"Database expert",
+            "facultyImage":"AFROZ SIR.jpg"
+            },
+            {
+            "facultyName":"Prashant",
+            "expertIn":"Backend expert",
+            "facultyImage":"PRASHANT SIR.jpeg"
+            },
+            {
+                "facultyName":"Ningaraju",
+                "expertIn":"Frontend expert",
+                "facultyImage":"NINGARAJU SIR.jpeg"
+                },
+                {
+                    "facultyName":"Pavan",
+                    "expertIn":"Programming expert",
+                    "facultyImage":"PAVAN SIR.jpeg"
+                    },
+                    {
+               "facultyName":"Koushik",
+               "expertIn":"CoreJava expert",
+                "facultyImage":"KOUSHIK SIR.jpeg"
+                },
+                {
+                    "facultyName":"Gowtham",
+                    "expertIn":"Database expert",
+                     "facultyImage":"GOWTHAM SIR.jpeg"
+  }
+ ]

@@ -1,0 +1,54 @@
+#bdRegister{
+    height: -20px;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230322/pngtree-the-concept-of-mobile-wallet-transfers-3d-rendering-concept-photo-image_2089318.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+}
+#registerdiv{
+  /*  border: 2px solid black; */
+    width: 30%;
+    height: 370px;
+   /* box-shadow: 2px 2px 3px hotpink;background-image: linear-gradient(orangered,white,pink); */
+    position: relative;
+    top: 160px;
+}
+.registerInput{
+    width: 370px;
+    height: 30px;
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    margin-top: 21px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px black;
+    background-color: rgb(193, 197, 198);
+
+}
+
+#registerH1{
+    position: relative;
+    top: 155px;
+    font-size:30px;
+    color: red;
+}
+#spanOr{
+    color: red;
+    text-shadow: 2px 2px 3px;
+    font-size: 20px;
+}
+
+#registerButton{
+    position: relative;
+    width: 70px;
+    height: 30px;
+    background-color: aquamarine;
+    font-family: 'Aoboshi One', serif;
+}
+#loginButton{
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: aquamarine;
+    font-family: 'Aoboshi One', serif;
+}
